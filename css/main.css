@@ -1,0 +1,419 @@
+#preloader-wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: blue;
+}
+
+* {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.number {
+  font-size: 1.8vw;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+}
+
+
+body {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+#current {
+  text-decoration: underline;
+}
+
+#logo {
+  top: 0.5vw;
+  position: fixed;
+  height: 3.5vw;
+  z-index: 40;
+  transition: height 250ms;
+}
+
+.wrap {
+  width: auto;
+  display: inline-block;
+}
+
+main {
+  position: relative;
+  top: 8vw;
+  background-color: rgba(0,0,0,0.05);
+}
+
+article {
+  display: flex;
+  align-items: center;
+  height: 39vw;
+}
+
+#banner-text {
+  display: inline-block;
+  width: 30vw;
+  font-size: 1.3vw;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  /*font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;*/
+}
+
+#banner-text h1 {
+  font-size: 3vw;
+  font-weight: 300;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+nav {
+  position: relative;
+  top: 9vw;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vw;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: relative;
+  top: 9vw;
+  text-align: center;
+}
+
+section p {
+  margin: 0;
+  font-family: 'Abril Fatface';
+  color: white;
+  font-size: 5vw;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+footer {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 9vw;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 2vw;
+  line-height: 2vw;
+
+}
+
+footer > p, footer > a {
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  padding: 0 0.75vw;
+  display: inline;
+  font-size: 0.75vw;
+  color: rgba(255,255,255,0.3);
+}
+
+footer > p > a {
+  color: white;
+}
+
+section a {
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.75vw;
+  transition: color 250ms ease;
+}
+
+#footer-top {
+
+}
+
+#footer-top, #footer-sub {
+  margin: 0;
+  height: 4vw;
+  line-height: 4vw;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#footer-sub {
+  height: 3vw;
+  line-height: 3vw;
+}
+
+nav label {
+  padding-right: 1vw;
+}
+
+select {
+  background-color: black;
+  padding: padding 0;
+  font-size: 0.5vw;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 1.1vw;
+  width: 10.5vw;
+  color: rgba(0,0,0,0.7);
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   height: 2vw;
+  border-radius: 2vw;
+  background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png) 96% / 15% no-repeat #fff;
+  padding: 0 1vw 0 0.8vw;
+}
+
+label {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 1.3vw;
+  text-transform: capitalize;
+  color: rgba(255,255,255,0.7);
+}
+
+#footer-top ul, #footer-sub  ul {
+  list-style: none;
+}
+
+#footer-top li, #footer-sub li {
+  display: inline-block;
+  font-size: 1.3vw;
+  text-transform: capitalize;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+#footer-sub li {
+  text-transform: uppercase;
+  font-family: Hind, sans-serif;
+  font-size: 0.8vw;
+}
+
+
+
+#footer-top a, #footer-sub a{
+  color: rgba(255,255,255,0.7);
+  padding: 0 1.5vw;
+  transition: color 250ms ease;
+}
+
+
+#main-menu {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  padding: 0;
+  height: 5vw;
+  line-height: 5vw;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  list-style: none;
+  margin: 0;
+  font-size: 1.5vw;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  transition: top 400ms ease;
+  z-index: 30;
+}
+
+#secondary-menu {
+  text-transform: uppercase;
+  font-family: Hind, sans-serif;
+  background-color: white;
+  padding: 0.5vw 0;
+  margin: 0 auto;
+  line-height: 2vw;
+  position: fixed;
+  z-index: 10;
+  top: 5vw;
+	left: 0;
+  height: 3vw;
+  line-height: 3vw;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  list-style: none;
+  width: 100%;
+  font-size: 0.8vw;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  transition: top 400ms ease;
+}
+
+.active  {
+  text-decoration: underline !important;
+}
+
+
+#secondary-menu li {
+  display: inline-block;
+}
+
+#main-menu li {
+  display: inline-block;
+  line-height: 4vw;
+}
+
+#main-menu a {
+  padding: 0 1.2vw;
+  display: inline-block;
+  height: 4vw !important;
+  transition: color 0.3s ease;
+}
+
+#main-menu .wrap {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.wrap:hover li a:not(:hover) {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#footer-top .wrap:hover li a:not(:hover) {
+  color: rgba(255,255,255,0.3);
+}
+
+#footer-sub .wrap:hover li a:not(:hover) {
+  color: rgba(255,255,255,0.3);
+}
+
+
+section a:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+#secondary-menu a {
+  transition: color 0.25s ease;
+  padding: 0 1vw;
+}
+
+#buy-button {
+  background-color: rgba(0,0,0,0.75);
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 1vw;
+   text-transform: inherit;
+   font-weight: inherit;
+   height: 2vw;
+   padding: 0 1vw;
+   line-height: 2vw;
+   color: white;
+   font-family: Hind;
+   font-size: inherit;
+   text-decoration: none;
+   cursor: pointer;
+   border:none;
+   outline: none;
+   transition: background-color 250ms ease;
+}
+
+#buy-button:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+#buy-button:active {
+  outline: none;
+}
+
+
+#banner-img {
+  display: inline-block;
+  padding: 5vw 0 0 15vw;
+  width: 35vw;
+}
+
+aside {
+  position: fixed;
+  display: flex;
+  bottom: 2vw;
+  right: 2.5vw;
+  width: 50%;
+  height: auto;
+  background-color: rgb(210,210,210);
+}
+
+#modal-box button {
+  border:none;
+  outline: none;
+  background-image: url(../images/cross.png) ;
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(100,100,100);
+  color: white;
+  height: 25px;
+  width: 25px;
+  top: -15px;
+  left: -15px;
+    border-radius: 1vw;
+    cursor: pointer;
+    border:none;
+}
+
+#modal-box {
+  display: none;
+  box-shadow: 5px 5px 30px  #000;
+}
+
+#modal-image {
+  width: 50%;
+  height: 21vw;
+  background-image: url(../images/modal.png);
+  background-size: cover;
+}
+
+#aside-text {
+  font-family: Hind;
+  text-align: center;
+  vertical-align: top;
+  width: 50%;
+  display: inline-block;
+}
+aside p, aside h1 {
+  color: rgba(0,0,0,0.4);
+}
+
+aside h1 {
+  padding: 0.75vw 0 0 0;
+}
+
+aside a {
+  margin-top: 1.5vw;
+  font-family: Lato;
+  width: 90%;
+  background-color: rgba(0,0,0,0.4);
+  height: 3vw;
+  line-height: 3vw;
+  border-radius: 0.3vw;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  }
